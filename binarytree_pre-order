@@ -58,8 +58,8 @@ node_b.set_right_child(node_e)
 
 node_c.set_right_child(node_f)
 
-node_c.set_right_child(node_g)
+node_d.set_right_child(node_g)
 
-node_d.set_left_child(node_h)
+node_e.set_left_child(node_h)
 
 b_tree.pre_order(b_tree.get_root())
