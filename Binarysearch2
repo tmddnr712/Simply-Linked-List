@@ -1,0 +1,33 @@
+def find(L, target, start, end):
+  if start > end:
+    return False
+
+  mid = (start + end) // 2
+  if L[mid] == target:
+    return mid
+  
+  if L[mid] > target: # 찾고자 하는 값보다 정 가운데 있는 값이 큼
+    return find(L, target, start, mid - 1)
+  else: # 찾고자 하는 값보다 정 가운데 있는 값이 작음
+    return find(L, target, mid + 1, end)
+
+
+L = []
+L.append(5)
+L.append(8)
+L.append(10)
+L.append(15)
+L.append(20)
+L.append(25)
+L.append(30)
+L.append(40)
+L.append(50)
+L.append(54)
+L.append(66)
+L.append(69)
+L.append(83)
+L.append(86)
+L.append(90)
+
+index = find(L, 67, 0, len(L)-1) #L에서 찾고싶은값:66, 0번째 인덱스부터 len(L)-1까지
+print(index)
