@@ -29,5 +29,5 @@ L.append(83)
 L.append(86)
 L.append(90)
 
-index = find(L, 67, 0, len(L)-1) #L에서 찾고싶은값:66, 0번째 인덱스부터 len(L)-1까지
+index = find(L, 66, 0, len(L)-1) #L에서 찾고싶은값:66, 0번째 인덱스부터 len(L)-1까지
 print(index)
